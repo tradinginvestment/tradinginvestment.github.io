@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Investasi 3 Hari</title>
+    <!-- Meta description dan keywords untuk SEO -->
+    <meta name="description" content="Investasi 3 Hari: Lakukan deposit terlebih dahulu untuk verifikasi, pastikan data benar. Deposit harus dilakukan sebelum verifikasi.">
+    <meta name="keywords" content="Investasi, Deposit, Verifikasi, Investasi 3 Hari, Gacor, Investasi Ekstrem, Investasi Hard, Keuangan, Penghasilan Online, Trading, Forex, Bitcoin, Dogecoin, Ethreum">
     <!-- Menambahkan Bootstrap 5 CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
     <style>
@@ -127,14 +130,14 @@
                 <p>Nama Pemilik Rekening: <strong>Muhammad Noer</strong></p>
                 <p>Bank: <strong>Bank BRI</strong></p>
 
-                <p><strong>2. Rekening untuk Transfer (Bank-Mandiri):</strong></p>
+                <p><strong>1. Rekening untuk Transfer (Bank-Mandiri):</strong></p>
                 <p>Nomor Rekening: <strong>1460021069724</strong></p>
                 <p>Nama Pemilik Rekening: <strong>Muhammad Noer</strong></p>
                 <p>Bank: <strong>Bank Mandiri</strong></p>
 
-                <p><strong>3. Deposit melalui Cryptocurrency:</strong></p>
+                <p><strong>2. Deposit melalui Cryptocurrency:</strong></p>
                 <!-- Bitcoin -->
-               <p>USDT BEP20 (BSC NETWORK) Address:</p>
+                <p>USDT BEP20 (BSC NETWORK) Address:</p>
                 <p><strong>0x6050a098846c97f75157667ef577f789edbefdd9</strong></p>
                 <p>Scan kode QR di bawah ini atau download untuk digunakan di aplikasi dompet Anda:</p>
                 <a href="https://api.qrserver.com/v1/create-qr-code/?data=0x6050a098846c97f75157667ef577f789edbefdd9&size=200x200" target="_blank">
@@ -142,7 +145,7 @@
                 </a>
                 <p>Atau <a href="https://api.qrserver.com/v1/create-qr-code/?data=0x6050a098846c97f75157667ef577f789edbefdd9&size=200x200" download="USDT_BEP20_QR.png">download QR Code</a></p>
 
-    <!-- USDT ERC20 (Tron Network) QR Code -->
+                <!-- USDT ERC20 (Tron Network) QR Code -->
                 <p>USDT ERC20 (Tron Network) Address:</p>
                 <p><strong>TS7JLDA7XUAWCYDHucZWf63DRp9viSHxto</strong></p>
                 <p>Scan kode QR di bawah ini atau download untuk digunakan di aplikasi dompet Anda:</p>
@@ -153,7 +156,7 @@
 
                 <p>Pastikan menggunakan alamat yang sesuai dengan jenis cryptocurrency yang Anda pilih untuk transfer.</p>
 
-                <p><strong>4. Ketentuan Deposit:</strong></p>
+                <p><strong>3. Ketentuan Deposit:</strong></p>
                 <ul>
                     <li>Investor wajib mentransfer dana sesuai dengan jumlah yang diinginkan ke nomor rekening bank atau alamat wallet crypto yang tertera di atas.</li>
                     <li>Setelah melakukan transfer, investor diwajibkan untuk memasukkan nama sesuai dengan nama pada rekening yang digunakan untuk mentransfer dana dan alamat email yang aktif.</li>
@@ -161,13 +164,34 @@
                     <li>Investasi tidak akan diproses jika nama dan rekening yang digunakan tidak sesuai atau tidak terdaftar.</li>
                 </ul>
 
-                <p><strong>5. Pengembalian Investasi:</strong></p>
+                <p><strong>4. Pengembalian Investasi:</strong></p>
                 <p>Keuntungan atau kerugian yang terjadi setelah periode investasi akan disalurkan ke rekening atau alamat wallet yang sama yang digunakan untuk deposit. Kami tidak akan mentransfer dana ke rekening lain selain yang digunakan untuk deposit awal.</p>
             </div>
         </div>
     </section>
 
     <!-- Bagian form input di bagian bawah halaman -->
+    <section id="deposit-form" class="container my-5">
+        <h2 class="text-center mb-4">Ajukan Deposit &amp; Verifikasi</h2>
+        <div class="alert alert-warning" role="alert">
+            <strong>PENTING:</strong> Pastikan Anda telah melakukan deposit terlebih dahulu. Jika terjadi kesalahan dalam proses verifikasi, keuangan Anda yang sebelumnya tidak akan diproses, dan hanya 10% dari total deposit yang akan dikembalikan dalam batas waktu 10 hari. Utamakan deposit terlebih dahulu sebelum melakukan verifikasi!
+        </div>
+        <form action="user/deposit_submission.html" method="get">
+            <div class="mb-3">
+                <label for="nama" class="form-label">Nama Sesuai Rekening</label>
+                <input type="text" class="form-control" id="nama" name="nama" required>
+            </div>
+            <div class="mb-3">
+                <label for="rekening" class="form-label">Nomor Rekening / Crypto Wallet</label>
+                <input type="text" class="form-control" id="rekening" name="rekening" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Kirim</button>
+        </form>
+    </section>
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-4">
