@@ -16,6 +16,17 @@
             background-color: #343a40;
             color: #fff;
         }
+
+        .crypto-logo {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .crypto-link {
+            text-decoration: none;
+            color: inherit;
+        }
     </style>
 </head>
 
@@ -117,8 +128,18 @@
                 <p>Bank: <strong>Bank ABC</strong></p>
 
                 <p><strong>2. Deposit melalui Cryptocurrency:</strong></p>
-                <p>Alamat Wallet Bitcoin: <strong>1A2b3C4D5E6F7G8H9I0J</strong></p>
-                <p>Alamat Wallet Ethereum: <strong>0xA1B2C3D4E5F6G7H8I9J0K</strong></p>
+                <!-- Bitcoin -->
+                <p><a href="bitcoin:1A2b3C4D5E6F7G8H9I0J" class="crypto-link">
+                        <img src="https://www.cryptocompare.com/media/37746418/btc.png" alt="Bitcoin" class="crypto-logo">
+                        Bitcoin Address: <strong>1A2b3C4D5E6F7G8H9I0J</strong>
+                    </a></p>
+
+                <!-- Ethereum -->
+                <p><a href="ethereum:0xA1B2C3D4E5F6G7H8I9J0K" class="crypto-link">
+                        <img src="https://www.cryptocompare.com/media/37746425/eth.png" alt="Ethereum" class="crypto-logo">
+                        Ethereum Address: <strong>0xA1B2C3D4E5F6G7H8I9J0K</strong>
+                    </a></p>
+
                 <p>Pastikan menggunakan alamat yang sesuai dengan jenis cryptocurrency yang Anda pilih untuk transfer.</p>
 
                 <p><strong>3. Ketentuan Deposit:</strong></p>
